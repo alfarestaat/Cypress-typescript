@@ -39,7 +39,7 @@ it('Test Sauce Demo Can Checkout Sauce labs product backpack', () => {
     checkoutpd.assertCheckout()
 })
 
-it("Test Sauce Demo Can't Checkout Sauce labs product backpack", () => {
+it("Test Sauce Demo Can't Checkout Sauce labs product backpack with empty postal code", () => {
     loginPage.login(URL,'standard_user','secret_sauce')
     loginPage.assertLogin()
     dashboardPage.sauceLabsBackpack() 
