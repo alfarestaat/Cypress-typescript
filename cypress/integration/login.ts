@@ -1,12 +1,12 @@
 import {LoginPage} from "./pages/login_pages"
 import {DashboardPage} from "./pages/dashboard_pages"
 import {CheckoutPd} from "./pages/checkoutpd"
-import {Removepd} from "./pages/removepd"
+
 
 let loginPage = new LoginPage()
 let dashboardPage = new DashboardPage()
 let checkoutpd = new CheckoutPd()
-let removepds = new Removepd()
+
 
 const URL = 'https://www.saucedemo.com/'
 
