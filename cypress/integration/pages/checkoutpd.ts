@@ -1,5 +1,5 @@
 export class CheckoutPd{
-    btn_addCart = '#add-to-cart-sauce-labs-backpack'
+    btn_addCart = '#add-to-cart'
     btn_cart = '#shopping_cart_container'
     btn_checkout = '#checkout'
     first_name = '#first-name'
@@ -42,7 +42,7 @@ export class CheckoutPd{
     assertCheckout(){
         cy.get('.complete-header').should('be.visible')
         cy.get('.pony_express').should('be.visible')
-        cy.contains('THANK YOU FOR YOUR ORDER').should('contain','THANK YOU FOR YOUR ORDER')
+        cy.contains('Thank you for your order!').should('contain','Thank you for your order!')
     }
 
     assertFailCheckout(){
